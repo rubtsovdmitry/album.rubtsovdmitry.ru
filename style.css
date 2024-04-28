@@ -1,4 +1,14 @@
 * { margin: 0px; }
 * { padding: 0px; }
 
-/*******************************************************************/
+
+/* service record */
+.height100 { height: 100%; }
+
+
+/* main page background */
+#one { background: 0 0 url(./pictures/0001.jpg) no-repeat,
+                    100% 40% url(./pictures/0002.jpg) no-repeat,
+                    0 100% url(./pictures/0003.jpg) no-repeat,
+                    30% 20% url(./pictures/0004.jpg) no-repeat,
+                    70% 20% url(./pictures/0005.jpg) no-repeat; }
