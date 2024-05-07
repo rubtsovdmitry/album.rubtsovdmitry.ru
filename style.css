@@ -4,6 +4,7 @@
 
 /* service record */
 .height100 { height: 100%; }
+.height75 { height: 75%; }
 
 
 /* main page background */
@@ -12,3 +13,51 @@
                     0 100% url(./pictures/0003.jpg) no-repeat,
                     30% 20% url(./pictures/0004.jpg) no-repeat,
                     70% 20% url(./pictures/0005.jpg) no-repeat; }
+
+/* my button */
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    height: 70px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 3px #00AE4C;
+    font-size: 4em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    -webkit-text-stroke: 3px #00AE4C;
+    border: 1px solid #00AE4C;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+  }  
+
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: url("./pictures/tsvety.jpg");
+    border-radius: 25px;
+    transition: all 3.00s;
+  }
+    
+  a:hover:after{
+    width: 100%;
+  }
