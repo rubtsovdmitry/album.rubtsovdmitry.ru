@@ -27,13 +27,12 @@
   animation-timing-function: linear;
 }
 
+
 @keyframes first_fly {
   0% {transform: rotate(0deg);}
-  0% {left: 0px;}
-  40% {left: 85%;}
-  40% {top: 75%;}
-  60% {left:65%;}
-  60% {top: 20%;}
+  33% {left: 33%;}
+  33% {top: 33%;} 
+  60% {top: 55%;}
   100% {transform: rotate(360deg);}
 }
 
@@ -43,7 +42,7 @@
   background-image: url(../pictures/0007_fly_image.jpg);
   position: absolute;
   left: -400px;
-  top: 800px;
+  top: 400px;
   animation-name: second_fly;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -53,7 +52,7 @@
 @keyframes second_fly {
   0% {transform: rotate(0deg);}
   10% {transform: rotate(100deg);}
-  10% {left: 45%;}
+  35% {left: 60%;}
   25% {top: 0%}
   100% {transform: rotate(-360deg);}
 }
@@ -63,8 +62,8 @@
   height: 400px;
   background-image: url(../pictures/0008_fly_image.jpg);
   position: absolute;
-  left: 80%;
-  top: 60%;
+  left: 500px;
+  top: 500px;
   animation-name: third_fly;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -72,10 +71,56 @@
 }
 
 @keyframes third_fly {
-  10% {transform: rotate(20deg);}
-  10% {left: 80%;}
-  10% {top: 60%;}
-  35% {left: 40%;}
-  45% {top: 20%;}
+  0% {transform: rotate(20deg);}
+  20% {left: -50%; top: -50%;}
+  40% {left: 100px; top: 50px;}
+  60% {left: 70%; }
+  80% {top: 50%; }
   100% {transform: rotate(360deg);}
+}
+
+
+/* tables, my buttons */
+table { width: 100%; }
+.td_right { float: right; }
+td { font-size: 4em; position: relative; }
+
+a{
+  display: table-cell;
+  vertical-align: middle;
+  width: 500px;
+  height: 70px;
+  border-radius: 25px;
+  box-shadow: 6px 6px 3px #00AE4C;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  -webkit-text-stroke: 3px #00AE4C;
+  border: 1px solid #00AE4C;
+  letter-spacing: 2px;
+  text-align: left;
+  text-indent: 35px;
+  position: relative;
+}  
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  border-radius: 25px;
+  transition: all 3.00s;
+}
+  
+a:hover:after{
+  width: 100%;
 }
