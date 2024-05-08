@@ -124,3 +124,17 @@ a:after{
 a:hover:after{
   width: 100%;
 }
+
+
+/* v razrabotke */
+#v_razrabotke { 
+  width: 1024px;
+  height: 726px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../pictures/v_razrabotke.jpg);
+}
