@@ -1,0 +1,344 @@
+* { margin: 0px; }
+* { padding: 0px; }
+
+
+/* service record */
+.height100 { height: 100%; }
+
+
+/* background */
+#ornament_travel {
+    background-image: url(../pictures/ornament_travel.jpg);
+}
+#my_background {
+    background-image: url(../pictures/world-map-with-russia-under-a-magnifying-glass.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+}
+
+
+/* buttons */
+#alexsandrov {
+  margin: 1%;
+  border-radius: 10px;
+  float: left;
+  font-size: 1.75em;
+  transform: rotate(-5deg);
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  background-image: url(../pictures/alexsandrov.jpg);
+  transition: width 4s, height 4s;
+  opacity: 1.0;
+  position: relative;
+  left: 2%;
+  top: 2%; 
+}
+#alexsandrov:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#vladimir {
+  margin: 1%;
+  border-radius: 10px;
+  float: right;
+  font-size: 1.75em;
+  transform: rotate(5deg);
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  background-image: url(../pictures/gold_gate.jpg);
+  transition: width 4s, height 4s;
+  opacity: 1.0;
+  position: relative;
+  left: -2%;
+  top: 2%; 
+}
+#vladimir:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#zaraisk {
+    margin: 1%;
+    border-radius: 10px;
+    float: left;
+    font-size: 1.75em;
+    transform: rotate(-5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/zaraisk.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: 2%;
+    top: 2%; 
+}
+#zaraisk:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#kislovodsk {
+    margin: 1%;
+    border-radius: 10px;
+    float: right;
+    font-size: 1.75em;
+    transform: rotate(5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/elbrus.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: -2%;
+    top: 2%; 
+}
+#kislovodsk:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#kolomna {
+    margin: 1%;
+    border-radius: 10px;
+    clear: both;
+    float: left;
+    font-size: 1.75em;
+    transform: rotate(-5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/kolomna.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: 2%;
+    top: 2%; 
+}
+#kolomna:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#kuligi {
+  margin: 1%;
+  border-radius: 10px;
+  float: right;
+  font-size: 1.75em;
+  transform: rotate(5deg);
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  background-image: url(../pictures/kuligi.jpg);
+  transition: width 4s, height 4s;
+  opacity: 1.0;
+  position: relative;
+  left: -2%;
+  top: 2%; 
+}
+#kuligi:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#leka {
+  margin: 1%;
+  border-radius: 10px;
+  float: left;
+  font-size: 1.75em;
+  transform: rotate(-5deg);
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  background-image: url(../pictures/leka.jpg);
+  transition: width 4s, height 4s;
+  opacity: 1.0;
+  position: relative;
+  left: 2%;
+  top: 2%; 
+}
+#leka:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#moscow {
+    margin: 1%;
+    border-radius: 10px;
+    float: right;
+    font-size: 1.75em;
+    transform: rotate(5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/moscow.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: -2%;
+    top: 2%; 
+}
+#moscow:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#ny {
+    margin: 1%;
+    border-radius: 10px;
+    clear: both;
+    float: left;
+    font-size: 1.75em;
+    transform: rotate(-5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/new_year.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: 2%;
+    top: 2%; 
+}
+#ny:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#park {
+    margin: 1%;
+    border-radius: 10px;
+    float: right;
+    font-size: 1.75em;
+    transform: rotate(5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/park.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: -2%;
+    top: 2%; 
+}
+#park:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#tula {
+    margin: 1%;
+    border-radius: 10px;
+    float: left;
+    font-size: 1.75em;
+    transform: rotate(-5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/tula.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: 2%;
+    top: 2%; 
+}
+#tula:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#hockey {
+    margin: 1%;
+    border-radius: 10px;
+    float: right;
+    font-size: 1.75em;
+    transform: rotate(5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/hockey.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: -2%;
+    top: 2%; 
+}
+#hockey:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#school {
+    margin: 1%;
+    border-radius: 10px;
+    clear: both;
+    float: left;
+    font-size: 1.75em;
+    transform: rotate(-5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/1_september.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: 2%;
+    top: 2%; 
+}
+#school:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
+
+#elektrostal {
+    margin: 1%;
+    border-radius: 10px;
+    float: right;
+    font-size: 1.75em;
+    transform: rotate(5deg);
+    text-align: center;
+    font-weight: 600;
+    width: 200px;
+    height: 200px;
+    background-image: url(../pictures/electrostal.jpg);
+    transition: width 4s, height 4s;
+    opacity: 1.0;
+    position: relative;
+    left: -2%;
+    top: 2%; 
+}
+#elektrostal:hover {
+    width: 400px;
+    height: 400px;
+    opacity: 1.0;
+}
