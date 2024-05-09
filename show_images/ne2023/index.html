@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Новый_год2023/001.Суздаль.jpg" title="Новый год №1"> Суздаль №1 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/002.Суздаль.jpg" title="Новый год №2"> Суздаль №2 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/003.Суздаль.jpg" title="Новый год №3"> Суздаль №3 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/004.Суздаль.jpg" title="Новый год №4"> Суздаль №4 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/005.Суздаль.jpg" title="Новый год №5"> Суздаль №5 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/006.Суздаль.jpg" title="Новый год №6"> Суздаль №6 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/007.Суздаль.jpg" title="Новый год №7"> Суздаль №7 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/008.Суздаль.jpg" title="Новый год №8"> Суздаль №8 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/009.Переяславль-Залесский.jpg" title="Новый год №9"> Переяславль-Залесский №9 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/010.Переяславль-Залесский.jpg" title="Новый год №10"> Переяславль-Залесский №10 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/011.Переяславль-Залесский.jpg" title="Новый год №11"> Переяславль-Залесский №11 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/012.Переяславль-Залесский.jpg" title="Новый год №12"> Переяславль-Залесский №12 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/013.Переяславль-Залесский.jpg" title="Новый год №13"> Переяславль-Залесский №13 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/014.Переяславль-Залесский.jpg" title="Новый год №14"> Переяславль-Залесский №14 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/015.Переяславль-Залесский.jpg" title="Новый год №15"> Переяславль-Залесский №15 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2023/016.Переяславль-Залесский.jpg" title="Новый год №16"> Переяславль-Залесский №16 </a></p>
+	</body>
+</html>

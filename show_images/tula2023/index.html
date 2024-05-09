@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Тула2023/001.Тула.jpg" title="Тула №1"> Тула №1 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/002.Тула.jpg" title="Тула №2"> Тула №2 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/003.Тула.jpg" title="Тула №3"> Тула №3 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/004.Тула.jpg" title="Тула №4"> Тула №4 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/005.Тула.jpg" title="Тула №5"> Тула №5 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/006.Тула.jpg" title="Тула №6"> Тула №6 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/007.Тула.jpg" title="Тула №7"> Тула №7 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/008.Тула.jpg" title="Тула №8"> Тула №8 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/009.Тула.jpg" title="Тула №9"> Тула №9 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/010.Тула.jpg" title="Тула №10"> Тула №10 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/011.Тула.jpg" title="Тула №11"> Тула №11 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/012.Тула.jpg" title="Тула №12"> Тула №12 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/013.Тула.jpg" title="Тула №13"> Тула №13 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/014.Тула.jpg" title="Тула №14"> Тула №14 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/041.Тула.jpg" title="Тула №15"> Тула №15 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/016.Тула.jpg" title="Тула №16"> Тула №16 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/017.Тула.jpg" title="Тула №17"> Тула №17 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/018.Тула.jpg" title="Тула №18"> Тула №18 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/019.Тула.jpg" title="Тула №19"> Тула №19 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/020.Тула.jpg" title="Тула №20"> Тула №20 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/021.Тула.jpg" title="Тула №21"> Тула №21 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/022.Тула.jpg" title="Тула №22"> Тула №22 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/023.Тула.jpg" title="Тула №23"> Тула №23 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/024.Тула.jpg" title="Тула №24"> Тула №24 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/025.Тула.jpg" title="Тула №25"> Тула №25 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/026.Тула.jpg" title="Тула №26"> Тула №26 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/027.Тула.jpg" title="Тула №27"> Тула №27 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/028.Тула.jpg" title="Тула №28"> Тула №28 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/029.Тула.jpg" title="Тула №29"> Тула №29 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/030.Тула.jpg" title="Тула №30"> Тула №30 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/031.Тула.jpg" title="Тула №31"> Тула №31 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/032.Тула.jpg" title="Тула №32"> Тула №32 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/033.Тула.jpg" title="Тула №33"> Тула №33 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/034.Тула.jpg" title="Тула №34"> Тула №34 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/035.Тула.jpg" title="Тула №35"> Тула №35 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/036.Тула.jpg" title="Тула №36"> Тула №36 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/037.Тула.jpg" title="Тула №37"> Тула №37 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/038.Тула.jpg" title="Тула №38"> Тула №38 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/039.Тула.jpg" title="Тула №39"> Тула №39 </a></p>
+		<p><a class="group3" href="../../pictures/Тула2023/040.Тула.jpg" title="Тула №40"> Тула №40 </a></p>
+	</body>
+</html>
