@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Кисловодск/001. Кисловодск.jpg" title="Кисловодск №1"> Кисловодск №1 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/002. Кисловодск.jpg" title="Кисловодск №2"> Кисловодск №2 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/003. Кисловодск.jpg" title="Кисловодск №3"> Кисловодск №3 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/004. Кисловодск.jpg" title="Кисловодск №4"> Кисловодск №4 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/005. Кисловодск.jpg" title="Кисловодск №5"> Кисловодск №5 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/006. Кисловодск.jpg" title="Кисловодск №6"> Кисловодск №6 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/007. Кисловодск.jpg" title="Кисловодск №7"> Кисловодск №7 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/008. Кисловодск.jpg" title="Кисловодск №8"> Кисловодск №8 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/009. Кисловодск.jpg" title="Кисловодск №9"> Кисловодск №9 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/011. Кисловодск.jpg" title="Кисловодск №10"> Кисловодск №10 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/012. Кисловодск.jpg" title="Кисловодск №11"> Кисловодск №11 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/013. Кисловодск.jpg" title="Кисловодск №12"> Кисловодск №12 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/014. Кисловодск.jpg" title="Кисловодск №13"> Кисловодск №13 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/015. Кисловодск.jpg" title="Кисловодск №14"> Кисловодск №14 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/016. Кисловодск.jpg" title="Кисловодск №15"> Кисловодск №15 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/017. Кисловодск.jpg" title="Кисловодск №16"> Кисловодск №16 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/018. Кисловодск.jpg" title="Кисловодск №17"> Кисловодск №17 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/019. Кисловодск.jpg" title="Кисловодск №18"> Кисловодск №18 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/020. Кисловодск.jpg" title="Кисловодск №19"> Кисловодск №19 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/021. Кисловодск.jpg" title="Кисловодск №20"> Кисловодск №20 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/022. Кисловодск.jpg" title="Кисловодск №21"> Кисловодск №21 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/023. Кисловодск.jpg" title="Кисловодск №22"> Кисловодск №22 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/024. Кисловодск.jpg" title="Кисловодск №23"> Кисловодск №23 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/025. Кисловодск.jpg" title="Кисловодск №24"> Кисловодск №24 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/026. Кисловодск.jpg" title="Кисловодск №25"> Кисловодск №25 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/027. Кисловодск.jpg" title="Кисловодск №26"> Кисловодск №26 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/028. Кисловодск.jpg" title="Кисловодск №27"> Кисловодск №27 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/029. Кисловодск.jpg" title="Кисловодск №28"> Кисловодск №28 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/030. Кисловодск.jpg" title="Кисловодск №29"> Кисловодск №29 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/031. Кисловодск.jpg" title="Кисловодск №30"> Кисловодск №30 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/032. Кисловодск.jpg" title="Кисловодск №31"> Кисловодск №31 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/033. Кисловодск.jpg" title="Кисловодск №32"> Кисловодск №32 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/034. Кисловодск.jpg" title="Кисловодск №33"> Кисловодск №33 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/035. Кисловодск.jpg" title="Кисловодск №34"> Кисловодск №34 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/036. Кисловодск.jpg" title="Кисловодск №35"> Кисловодск №35 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/037. Кисловодск.jpg" title="Кисловодск №36"> Кисловодск №36 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/038. Кисловодск.jpg" title="Кисловодск №37"> Кисловодск №37 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/039. Кисловодск.jpg" title="Кисловодск №38"> Кисловодск №38 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/040. Кисловодск.jpg" title="Кисловодск №39"> Кисловодск №39 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/041. Кисловодск.jpg" title="Кисловодск №40"> Кисловодск №40 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/042. Кисловодск.jpg" title="Кисловодск №41"> Кисловодск №41 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/043. Кисловодск.jpg" title="Кисловодск №42"> Кисловодск №42 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/044. Кисловодск.jpg" title="Кисловодск №43"> Кисловодск №43 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/045. Кисловодск.jpg" title="Кисловодск №44"> Кисловодск №44 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/046. Кисловодск.jpg" title="Кисловодск №45"> Кисловодск №45 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/047. Кисловодск.jpg" title="Кисловодск №46"> Кисловодск №46 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/048. Кисловодск.jpg" title="Кисловодск №47"> Кисловодск №47 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/049. Кисловодск.jpg" title="Кисловодск №48"> Кисловодск №48 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/050. Кисловодск.jpg" title="Кисловодск №49"> Кисловодск №49 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/051. Кисловодск.jpg" title="Кисловодск №50"> Кисловодск №50 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/052. Кисловодск.jpg" title="Кисловодск №51"> Кисловодск №51 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/053. Кисловодск.jpg" title="Кисловодск №52"> Кисловодск №52 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/054. Кисловодск.jpg" title="Кисловодск №53"> Кисловодск №53 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/055. Кисловодск.jpg" title="Кисловодск №54"> Кисловодск №54 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/056. Кисловодск.jpg" title="Кисловодск №55"> Кисловодск №55 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/057. Кисловодск.jpg" title="Кисловодск №56"> Кисловодск №56 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/058. Кисловодск.jpg" title="Кисловодск №57"> Кисловодск №57 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/059. Кисловодск.jpg" title="Кисловодск №58"> Кисловодск №58 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/060. Кисловодск.jpg" title="Кисловодск №59"> Кисловодск №59 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/061. Кисловодск.jpg" title="Кисловодск №60"> Кисловодск №60 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/062. Кисловодск.jpg" title="Кисловодск №61"> Кисловодск №61 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/063. Кисловодск.jpg" title="Кисловодск №62"> Кисловодск №62 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/064. Кисловодск.jpg" title="Кисловодск №63"> Кисловодск №63 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/065. Кисловодск.jpg" title="Кисловодск №64"> Кисловодск №64 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/066. Кисловодск.jpg" title="Кисловодск №65"> Кисловодск №65 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/067. Кисловодск.jpg" title="Кисловодск №66"> Кисловодск №66 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/068. Кисловодск.jpg" title="Кисловодск №67"> Кисловодск №67 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/069. Кисловодск.jpg" title="Кисловодск №68"> Кисловодск №68 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/070. Кисловодск.jpg" title="Кисловодск №69"> Кисловодск №69 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/071. Кисловодск.jpg" title="Кисловодск №70"> Кисловодск №70 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/072. Кисловодск.jpg" title="Кисловодск №71"> Кисловодск №71 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/073. Кисловодск.jpg" title="Кисловодск №72"> Кисловодск №72 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/074. Кисловодск.jpg" title="Кисловодск №73"> Кисловодск №73 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/075. Кисловодск.jpg" title="Кисловодск №74"> Кисловодск №74 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/076. Кисловодск.jpg" title="Кисловодск №75"> Кисловодск №75 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/077. Кисловодск.jpg" title="Кисловодск №76"> Кисловодск №76 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/078. Кисловодск.jpg" title="Кисловодск №77"> Кисловодск №77 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/079. Кисловодск.jpg" title="Кисловодск №78"> Кисловодск №78 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/080. Кисловодск.jpg" title="Кисловодск №79"> Кисловодск №79 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/081. Кисловодск.jpg" title="Кисловодск №80"> Кисловодск №80 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/082. Кисловодск.jpg" title="Кисловодск №81"> Кисловодск №81 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/083. Кисловодск.jpg" title="Кисловодск №82"> Кисловодск №82 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/084. Кисловодск.jpg" title="Кисловодск №83"> Кисловодск №83 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/085. Кисловодск.jpg" title="Кисловодск №84"> Кисловодск №84 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/086. Кисловодск.jpg" title="Кисловодск №85"> Кисловодск №85 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/087. Кисловодск.jpg" title="Кисловодск №86"> Кисловодск №86 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/088. Кисловодск.jpg" title="Кисловодск №87"> Кисловодск №87 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/089. Кисловодск.jpg" title="Кисловодск №88"> Кисловодск №88 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/090. Кисловодск.jpg" title="Кисловодск №89"> Кисловодск №89 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/091. Кисловодск.jpg" title="Кисловодск №90"> Кисловодск №90 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/092. Кисловодск.jpg" title="Кисловодск №91"> Кисловодск №91 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/093. Кисловодск.jpg" title="Кисловодск №92"> Кисловодск №92 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/094. Кисловодск.jpg" title="Кисловодск №93"> Кисловодск №93 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/095. Кисловодск.jpg" title="Кисловодск №94"> Кисловодск №94 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/096. Кисловодск.jpg" title="Кисловодск №95"> Кисловодск №95 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/097. Кисловодск.jpg" title="Кисловодск №96"> Кисловодск №96 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/098. Кисловодск.jpg" title="Кисловодск №97"> Кисловодск №97 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/099. Кисловодск.jpg" title="Кисловодск №98"> Кисловодск №98 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/100. Кисловодск.jpg" title="Кисловодск №99"> Кисловодск №99 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/101. Кисловодск.jpg" title="Кисловодск №100"> Кисловодск №100 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/102. Кисловодск.jpg" title="Кисловодск №101"> Кисловодск №101 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/103. Кисловодск.jpg" title="Кисловодск №102"> Кисловодск №102 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/104. Кисловодск.jpg" title="Кисловодск №103"> Кисловодск №103 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/105. Кисловодск.jpg" title="Кисловодск №104"> Кисловодск №104 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/107. Кисловодск.jpg" title="Кисловодск №105"> Кисловодск №105 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/108. Кисловодск.jpg" title="Кисловодск №106"> Кисловодск №106 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/109. Кисловодск.jpg" title="Кисловодск №107"> Кисловодск №107 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/110. Кисловодск.jpg" title="Кисловодск №108"> Кисловодск №108 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/111. Кисловодск.jpg" title="Кисловодск №109"> Кисловодск №109 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/112. Кисловодск.jpg" title="Кисловодск №110"> Кисловодск №110 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/113. Кисловодск.jpg" title="Кисловодск №111"> Кисловодск №111 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/114. Кисловодск.jpg" title="Кисловодск №112"> Кисловодск №112 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/115. Кисловодск.jpg" title="Кисловодск №113"> Кисловодск №113 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/116. Кисловодск.jpg" title="Кисловодск №114"> Кисловодск №114 </a></p>
+		<p><a class="group3" href="../../pictures/Кисловодск/117. Кисловодск.jpg" title="Кисловодск №115"> Кисловодск №115 </a></p>
+	</body>
+</html>
