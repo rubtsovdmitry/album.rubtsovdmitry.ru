@@ -9,7 +9,8 @@
 /* background */
 #for_background { 
   height: 100%;
-  background-image: url(../pictures/tsvety.jpg);
+  /* background-image: url(../pictures/tsvety.jpg); */
+  background-image: linear-gradient(to right bottom, lightgreen, white);
   position: relative;
   background-attachment: fixed;
 }

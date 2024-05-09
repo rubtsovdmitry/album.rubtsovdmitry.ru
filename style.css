@@ -53,7 +53,8 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-image: url("./pictures/tsvety.jpg");
+    /* background-image: url("./pictures/tsvety.jpg"); */
+    background-image: linear-gradient(to right bottom, lightgreen, white);
     border-radius: 25px;
     transition: all 3.00s;
   }
