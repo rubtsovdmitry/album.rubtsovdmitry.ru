@@ -6,11 +6,6 @@
 .height100 { height: 100%; }
 
 
-/* background */
-#ornament_travel {
-    /* background-image: url(../pictures/ornament_travel.jpg); */
-    background-image: linear-gradient(to right bottom, lightgreen, white);
-}
 #my_background {
     background-image: url(../pictures/world-map-with-russia-under-a-magnifying-glass.jpg);
     background-repeat: repeat-y;
