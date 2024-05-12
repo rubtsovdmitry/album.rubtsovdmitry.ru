@@ -1,0 +1,29 @@
+* { margin: 0px; }
+* { padding: 0px; }
+
+.height100 { height: 100%; }
+.class_img { display: block; height: calc(50% - 20px); padding: 10px; margin: auto; }
+
+#first_image { 
+    position: relative; top: -50%;  /* стартовая позиция для картинки */ 
+    animation-name: appear;
+    animation-duration: 3.0s;
+    animation-fill-mode: forwards;    /* после анимации картинка остаётся на месте */
+    animation-timing-function: linear;
+}
+
+@keyframes appear {
+    100% { top: 0%; }
+}
+
+#second_image { 
+    position: relative; bottom: -50%; 
+    animation-name: appear_two;
+    animation-duration: 3.0s;
+    animation-fill-mode: forwards;    
+    animation-timing-function: linear;
+}
+
+@keyframes appear_two {
+    100% { bottom: 0%; }
+}
