@@ -1,6 +1,9 @@
 * { margin: 0px; }
 * { padding: 0px; }
 
+
+/* First animation with two pictures, which coming on main page */
+
 .height100 { height: 100%; }
 .class_img { display: block; height: calc(50% - 20px); padding: 10px; margin: auto; }
 
@@ -27,3 +30,24 @@
 @keyframes appear_two {
     100% { bottom: 0%; }
 }
+
+
+/* first four themes */
+
+#first_line {
+    width: 1520px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.first_4_images { display: block; float: left; margin: 40px; border-radius: 10px; }
+#first_4_images_img1 { position: absolute; z-index: 10; left: -40px; display: none; border-radius: 10px; }
+#first_4_images_img2 { position: absolute; z-index: 10; left: 340px; display: none; border-radius: 10px; }
+#first_4_images_img3 { position: absolute; z-index: 10; left: 720px; display: none; border-radius: 10px; }
+#first_4_images_img4 { position: absolute; z-index: 10; left: 1100px; display: none; border-radius: 10px; }
+
+#first_line:hover #first_4_images_img1 { display: block; box-shadow: 20px 20px 10px black;}
+#first_line:hover #first_4_images_img2 { display: block; box-shadow: 20px 20px 10px black;}
+#first_line:hover #first_4_images_img3 { display: block; box-shadow: 20px 20px 10px black;}
+#first_line:hover #first_4_images_img4 { display: block; box-shadow: 20px 20px 10px black;}
+#first_line:hover .first_4_images { opacity: 0.5; }
