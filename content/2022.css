@@ -93,3 +93,70 @@
 #second_line:hover #second_4_images_text2 { display: block; }
 #second_line:hover #second_4_images_text3 { display: block; }
 #second_line:hover #second_4_images_text4 { display: block; }
+
+
+/* third four themes */
+
+#third_line {
+    width: 1520px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: left;
+}
+.third_4_images { display: block; float: left; margin: 40px; border-radius: 10px; }
+#third_4_images_img1 { position: absolute; z-index: 10; left: -40px; display: none; border-radius: 10px; }
+#third_4_images_img2 { position: absolute; z-index: 10; left: 340px; display: none; border-radius: 10px; }
+#third_4_images_img3 { position: absolute; z-index: 10; left: 720px; display: none; border-radius: 10px; }
+#third_4_images_img4 { position: absolute; z-index: 10; left: 1100px; display: none; border-radius: 10px; }
+
+#third_line:hover #third_4_images_img1 { display: block; box-shadow: 20px 20px 10px black;}
+#third_line:hover #third_4_images_img2 { display: block; box-shadow: 20px 20px 10px black;}
+#third_line:hover #third_4_images_img3 { display: block; box-shadow: 20px 20px 10px black;}
+#third_line:hover #third_4_images_img4 { display: block; box-shadow: 20px 20px 10px black;}
+#third_line:hover .third_4_images { opacity: 0.5; }
+
+#third_4_images_text1 { position: absolute; z-index: 11; left: -40px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#third_4_images_text2 { position: absolute; z-index: 11; left: 340px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#third_4_images_text3 { position: absolute; z-index: 11; left: 720px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#third_4_images_text4 { position: absolute; z-index: 11; left: 1100px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+
+#third_line:hover #third_4_images_text1 { display: block; }
+#third_line:hover #third_4_images_text2 { display: block; }
+#third_line:hover #third_4_images_text3 { display: block; }
+#third_line:hover #third_4_images_text4 { display: block; }
+
+
+/* fourth four themes */
+
+#fourth_line {
+    width: 1520px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: left;
+}
+.fourth_4_images { display: block; float: left; margin: 40px; border-radius: 10px; }
+#fourth_4_images_img1 { position: absolute; z-index: 10; left: -40px; display: none; border-radius: 10px; }
+#fourth_4_images_img2 { position: absolute; z-index: 10; left: 340px; display: none; border-radius: 10px; }
+#fourth_4_images_img3 { position: absolute; z-index: 10; left: 720px; display: none; border-radius: 10px; }
+#fourth_4_images_img4 { position: absolute; z-index: 10; left: 1100px; display: none; border-radius: 10px; }
+
+#fourth_line:hover #fourth_4_images_img1 { display: block; box-shadow: 20px 20px 10px black;}
+#fourth_line:hover #fourth_4_images_img2 { display: block; box-shadow: 20px 20px 10px black;}
+#fourth_line:hover #fourth_4_images_img3 { display: block; box-shadow: 20px 20px 10px black;}
+#fourth_line:hover #fourth_4_images_img4 { display: block; box-shadow: 20px 20px 10px black;}
+#fourth_line:hover .fourth_4_images { opacity: 0.5; }
+
+#fourth_4_images_text1 { position: absolute; z-index: 11; left: -40px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#fourth_4_images_text2 { position: absolute; z-index: 11; left: 340px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#fourth_4_images_text3 { position: absolute; z-index: 11; left: 720px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#fourth_4_images_text4 { position: absolute; z-index: 11; left: 1100px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+
+#fourth_line:hover #fourth_4_images_text1 { display: block; }
+#fourth_line:hover #fourth_4_images_text2 { display: block; }
+#fourth_line:hover #fourth_4_images_text3 { display: block; }
+#fourth_line:hover #fourth_4_images_text4 { display: block; }
+
+/* empty div */
+#empty_div { height: 40px; position: relative; bottom: -500px; }
