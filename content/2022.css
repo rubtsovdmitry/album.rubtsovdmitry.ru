@@ -51,3 +51,13 @@
 #first_line:hover #first_4_images_img3 { display: block; box-shadow: 20px 20px 10px black;}
 #first_line:hover #first_4_images_img4 { display: block; box-shadow: 20px 20px 10px black;}
 #first_line:hover .first_4_images { opacity: 0.5; }
+
+#first_4_images_text1 { position: absolute; z-index: 11; left: -40px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#first_4_images_text2 { position: absolute; z-index: 11; left: 340px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#first_4_images_text3 { position: absolute; z-index: 11; left: 720px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+#first_4_images_text4 { position: absolute; z-index: 11; left: 1100px; width: 300px; height: 400px; display: none; font-size: 2em; font-weight: 600; text-align: center; color: white; text-shadow: 4px 4px black; }
+
+#first_line:hover #first_4_images_text1 { display: block; }
+#first_line:hover #first_4_images_text2 { display: block; }
+#first_line:hover #first_4_images_text3 { display: block; }
+#first_line:hover #first_4_images_text4 { display: block; }
