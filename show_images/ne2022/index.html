@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Новый_год2022/001.jpg" title="Новый год №1"> Новый год №1 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/002.jpg" title="Новый год №2"> Новый год №2 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/003.jpg" title="Новый год №3"> Новый год №3 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/004.jpg" title="Новый год №4"> Новый год №4 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/005.jpg" title="Новый год №5"> Новый год №5 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/006.jpg" title="Новый год №6"> Новый год №6 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/007.jpg" title="Новый год №7"> Новый год №7 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/008.jpg" title="Новый год №8"> Новый год №8 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/009.jpg" title="Новый год №9"> Новый год №9 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/010.jpg" title="Новый год №10"> Новый год №10 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/011.jpg" title="Новый год №11"> Новый год №11 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/012.jpg" title="Новый год №12"> Новый год №12 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/013.jpg" title="Новый год №13"> Новый год №13 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/014.jpg" title="Новый год №14"> Новый год №14 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/015.jpg" title="Новый год №15"> Новый год №15 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/016.jpg" title="Новый год №16"> Новый год №16 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/017.jpg" title="Новый год №17"> Новый год №17 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/018.jpg" title="Новый год №18"> Новый год №18 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/019.jpg" title="Новый год №19"> Новый год №19 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/020.jpg" title="Новый год №20"> Новый год №20 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/021.jpg" title="Новый год №21"> Новый год №21 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/022.jpg" title="Новый год №22"> Новый год №22 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/023.jpg" title="Новый год №23"> Новый год №23 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/024.jpg" title="Новый год №24"> Новый год №24 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/025.jpg" title="Новый год №25"> Новый год №25 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/026.jpg" title="Новый год №26"> Новый год №26 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/027.jpg" title="Новый год №27"> Новый год №27 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/028.jpg" title="Новый год №28"> Новый год №28 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/029.jpg" title="Новый год №29"> Новый год №29 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/030.jpg" title="Новый год №30"> Новый год №30 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/031.jpg" title="Новый год №31"> Новый год №31 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/032.jpg" title="Новый год №32"> Новый год №32 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/033.jpg" title="Новый год №33"> Новый год №33 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/034.jpg" title="Новый год №34"> Новый год №34 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/035.jpg" title="Новый год №35"> Новый год №35 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/036.jpg" title="Новый год №36"> Новый год №36 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/037.jpg" title="Новый год №37"> Новый год №37 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/038.jpg" title="Новый год №38"> Новый год №38 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/039.jpg" title="Новый год №39"> Новый год №39 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/040.jpg" title="Новый год №40"> Новый год №40 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/041.jpg" title="Новый год №41"> Новый год №41 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/042.jpg" title="Новый год №42"> Новый год №42 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/043.jpg" title="Новый год №43"> Новый год №43 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/044.jpg" title="Новый год №44"> Новый год №44 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/045.jpg" title="Новый год №45"> Новый год №45 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/046.jpg" title="Новый год №46"> Новый год №46 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/047.jpg" title="Новый год №47"> Новый год №47 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/048.jpg" title="Новый год №48"> Новый год №48 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/049.jpg" title="Новый год №49"> Новый год №49 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/050.jpg" title="Новый год №50"> Новый год №50 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/051.jpg" title="Новый год №51"> Новый год №51 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/052.jpg" title="Новый год №52"> Новый год №52 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/053.jpg" title="Новый год №53"> Новый год №53 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/054.jpg" title="Новый год №54"> Новый год №54 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/055.jpg" title="Новый год №55"> Новый год №55 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/056.jpg" title="Новый год №56"> Новый год №56 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/057.jpg" title="Новый год №57"> Новый год №57 </a></p>
+		<p><a class="group3" href="../../pictures/Новый_год2022/058.jpg" title="Новый год №58"> Новый год №58 </a></p>
+	</body>
+</html>

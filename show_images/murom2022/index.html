@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Муром2022/001.jpg" title="Муром №1"> Муром №1 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/002.jpg" title="Муром №2"> Муром №2 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/003.jpg" title="Муром №3"> Муром №3 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/004.jpg" title="Муром №4"> Муром №4 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/005.jpg" title="Муром №5"> Муром №5 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/006.jpg" title="Муром №6"> Муром №6 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/007.jpg" title="Муром №7"> Муром №7 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/008.jpg" title="Муром №8"> Муром №8 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/009.jpg" title="Муром №9"> Муром №9 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/010.jpg" title="Муром №10"> Муром №10 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/011.jpg" title="Муром №11"> Муром №11 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/012.jpg" title="Муром №12"> Муром №12 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/013.jpg" title="Муром №13"> Муром №13 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/014.jpg" title="Муром №14"> Муром №14 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/015.jpg" title="Муром №15"> Муром №15 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/016.jpg" title="Муром №16"> Муром №16 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/017.jpg" title="Муром №17"> Муром №17 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/018.jpg" title="Муром №18"> Муром №18 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/019.jpg" title="Муром №19"> Муром №19 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/020.jpg" title="Муром №20"> Муром №20 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/021.jpg" title="Муром №21"> Муром №21 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/022.jpg" title="Муром №22"> Муром №22 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/023.jpg" title="Муром №23"> Муром №23 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/024.jpg" title="Муром №24"> Муром №24 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/025.jpg" title="Муром №25"> Муром №25 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/026.jpg" title="Муром №26"> Муром №26 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/027.jpg" title="Муром №27"> Муром №27 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/028.jpg" title="Муром №28"> Муром №28 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/029.jpg" title="Муром №29"> Муром №29 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/030.jpg" title="Муром №30"> Муром №30 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/031.jpg" title="Муром №31"> Муром №31 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/032.jpg" title="Муром №32"> Муром №32 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/033.jpg" title="Муром №33"> Муром №33 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/034.jpg" title="Муром №34"> Муром №34 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/035.jpg" title="Муром №35"> Муром №35 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/036.jpg" title="Муром №36"> Муром №36 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/037.jpg" title="Муром №37"> Муром №37 </a></p>
+		<p><a class="group3" href="../../pictures/Муром2022/038.jpg" title="Муром №38"> Муром №38 </a></p>
+	</body>
+</html>

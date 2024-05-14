@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Кулиги2022/001.jpg" title="Кулиги №1"> Кулиги №1 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/002.jpg" title="Кулиги №2"> Кулиги №2 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/003.jpg" title="Кулиги №3"> Кулиги №3 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/004.jpg" title="Кулиги №4"> Кулиги №4 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/005.jpg" title="Кулиги №5"> Кулиги №5 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/006.jpg" title="Кулиги №6"> Кулиги №6 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/007.jpg" title="Кулиги №7"> Кулиги №7 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/008.jpg" title="Кулиги №8"> Кулиги №8 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/009.jpg" title="Кулиги №9"> Кулиги №9 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/010.jpg" title="Кулиги №10"> Кулиги №10 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/011.jpg" title="Кулиги №11"> Кулиги №11 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/012.jpg" title="Кулиги №12"> Кулиги №12 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/013.jpg" title="Кулиги №13"> Кулиги №13 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/014.jpg" title="Кулиги №14"> Кулиги №14 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/015.jpg" title="Кулиги №15"> Кулиги №15 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/016.jpg" title="Кулиги №16"> Кулиги №16 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/017.jpg" title="Кулиги №17"> Кулиги №17 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/018.jpg" title="Кулиги №18"> Кулиги №18 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/019.jpg" title="Кулиги №19"> Кулиги №19 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/020.jpg" title="Кулиги №20"> Кулиги №20 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/021.jpg" title="Кулиги №21"> Кулиги №21 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/022.jpg" title="Кулиги №22"> Кулиги №22 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/023.jpg" title="Кулиги №23"> Кулиги №23 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/024.jpg" title="Кулиги №24"> Кулиги №24 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/025.jpg" title="Кулиги №25"> Кулиги №25 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/026.jpg" title="Кулиги №26"> Кулиги №26 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/027.jpg" title="Кулиги №27"> Кулиги №27 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/028.jpg" title="Кулиги №28"> Кулиги №28 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/029.jpg" title="Кулиги №29"> Кулиги №29 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/030.jpg" title="Кулиги №30"> Кулиги №30 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/031.jpg" title="Кулиги №31"> Кулиги №31 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/032.jpg" title="Кулиги №32"> Кулиги №32 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/033.jpg" title="Кулиги №33"> Кулиги №33 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/034.jpg" title="Кулиги №34"> Кулиги №34 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/035.jpg" title="Кулиги №35"> Кулиги №35 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/036.jpg" title="Кулиги №36"> Кулиги №36 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/037.jpg" title="Кулиги №37"> Кулиги №37 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/038.jpg" title="Кулиги №38"> Кулиги №38 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/039.jpg" title="Кулиги №39"> Кулиги №39 </a></p>
+		<p><a class="group3" href="../../pictures/Кулиги2022/040.jpg" title="Кулиги №40"> Кулиги №40 </a></p>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/Коломна2022/001.jpg" title="Коломна №1"> Коломна №1 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/002.jpg" title="Коломна №2"> Коломна №2 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/003.jpg" title="Коломна №3"> Коломна №3 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/004.jpg" title="Коломна №4"> Коломна №4 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/005.jpg" title="Коломна №5"> Коломна №5 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/006.jpg" title="Коломна №6"> Коломна №6 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/007.jpg" title="Коломна №7"> Коломна №7 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/008.jpg" title="Коломна №8"> Коломна №8 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/009.jpg" title="Коломна №9"> Коломна №9 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/010.jpg" title="Коломна №10"> Коломна №10 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/011.jpg" title="Коломна №11"> Коломна №11 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/012.jpg" title="Коломна №12"> Коломна №12 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/013.jpg" title="Коломна №13"> Коломна №13 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/014.jpg" title="Коломна №14"> Коломна №14 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/015.jpg" title="Коломна №15"> Коломна №15 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/016.jpg" title="Коломна №16"> Коломна №16 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/017.jpg" title="Коломна №17"> Коломна №17 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/018.jpg" title="Коломна №18"> Коломна №18 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/019.jpg" title="Коломна №19"> Коломна №19 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/020.jpg" title="Коломна №20"> Коломна №20 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/021.jpg" title="Коломна №21"> Коломна №21 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/022.jpg" title="Коломна №22"> Коломна №22 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/023.jpg" title="Коломна №23"> Коломна №23 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/024.jpg" title="Коломна №24"> Коломна №24 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/025.jpg" title="Коломна №25"> Коломна №25 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/026.jpg" title="Коломна №26"> Коломна №26 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/027.jpg" title="Коломна №27"> Коломна №27 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/028.jpg" title="Коломна №28"> Коломна №28 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/029.jpg" title="Коломна №29"> Коломна №29 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/030.jpg" title="Коломна №30"> Коломна №30 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/031.jpg" title="Коломна №31"> Коломна №31 </a></p>
+		<p><a class="group3" href="../../pictures/Коломна2022/032.jpg" title="Коломна №32"> Коломна №32 </a></p>
+	</body>
+</html>
