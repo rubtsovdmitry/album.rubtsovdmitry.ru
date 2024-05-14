@@ -5,11 +5,36 @@
 /* service record */
 .height100 { height: 100%; }
 
+/******************************************************************************************/
 
 /* background */
-#for_background { 
+
+/* #for_background { 
   background-image: linear-gradient(to right bottom, lightgreen, white);
-  background-attachment: fixed;
+  background-attachment: fixed; 
+} */
+
+.image-bg {
+  height: 50%;  
+  position: relative;
+  top: -100%;
+}
+
+.image-bg .image-scroll {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: all 5s ease-out 0s;
+}
+.image-bg:hover .image-scroll {
+  background-position: center 100%;
 }
 
 #first_foto {
@@ -26,8 +51,8 @@
   animation-delay: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 1;
 }
-
 
 @keyframes first_fly {
   0% {transform: rotate(0deg);}
@@ -50,6 +75,7 @@
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 1;
 }
 
 @keyframes second_fly {
@@ -73,6 +99,7 @@
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 1;
 }
 
 @keyframes third_fly {
@@ -84,8 +111,10 @@
   100% {transform: rotate(360deg);}
 }
 
+/******************************************************************************************/
 
 /* tables, my buttons */
+
 table { width: 100%; }
 .td_right { float: right; }
 td { font-size: 4em; position: relative; }
@@ -107,11 +136,12 @@ a{
   text-align: left;
   text-indent: 35px;
   position: relative;
+  z-index: 1;
 }  
 
 a span{
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 a:after{
@@ -130,8 +160,10 @@ a:hover:after{
   width: 100%;
 }
 
+/******************************************************************************************/
 
 /* v razrabotke */
+
 #v_razrabotke { 
   width: 1024px;
   height: 726px;
