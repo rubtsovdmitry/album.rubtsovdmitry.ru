@@ -1,5 +1,6 @@
 * { margin: 0px; }
 * { padding: 0px; }
+* { font-weight: 600; color: darkblue; }
 
 .height100 { height: 100%; }
 
@@ -64,6 +65,618 @@
         width: 200px;
         position: absolute;
         top: 90px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+
+/* deti */
+
+#deti { display: block; }
+#deti_first { 
+    background-image: url(../pictures/2021_deti.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#deti_first_2{
+    background-color: green;
+    opacity: 0.4;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#deti_2 { display: none; }
+#deti_second { 
+    background-image: url(../pictures/2021_deti.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#deti_second_2 {
+    background-color: green;
+    opacity: 0.2;
+    height: 165px;
+    width: 220px;
+    position: absolute;
+    top: 140px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#wrapper_2 a { display: none; }
+
+#wrapper_2:hover #deti {display: none;} 
+#wrapper_2:hover #deti_2 { display: block; }
+#wrapper_2:hover a { 
+    display: block; height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+
+/* kazan */
+
+#kazan { display: block; }
+    #kazan_first { 
+        background-image: url(../pictures/2021_kazan.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 330px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #kazan_first_2{
+        background-color: lightblue;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 370px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #kazan_2 { display: none; }
+    #kazan_second { 
+        background-image: url(../pictures/2021_kazan.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #kazan_second_2 {
+        background-color: lightblue;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 370px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_3 a { display: none; }
+    
+    #wrapper_3:hover #kazan {display: none;} 
+    #wrapper_3:hover #kazan_2 { display: block; }
+    #wrapper_3:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+
+    /* dacha */
+
+#dacha { display: block; }
+#dacha_first { 
+    background-image: url(../pictures/2021_dacha.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#dacha_first_2{
+    background-color: orange;
+    opacity: 0.4;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    left: 850px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#dacha_2 { display: none; }
+#dacha_second { 
+    background-image: url(../pictures/2021_dacha.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 850px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#dacha_second_2 {
+    background-color: orange;
+    opacity: 0.2;
+    height: 165px;
+    width: 220px;
+    position: absolute;
+    top: 140px;
+    left: 850px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#wrapper_4 a { display: none; }
+
+#wrapper_4:hover #dacha {display: none;} 
+#wrapper_4:hover #dacha_2 { display: block; }
+#wrapper_4:hover a { 
+    display: block; height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 850px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+
+/* leka */
+
+#leka { display: block; }
+    #leka_first { 
+        background-image: url(../pictures/2021_leka.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 330px;
+        left: 500px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #leka_first_2{
+        background-color: magenta;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 370px;
+        left: 500px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #leka_2 { display: none; }
+    #leka_second { 
+        background-image: url(../pictures/2021_leka.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 500px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #leka_second_2 {
+        background-color: magenta;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 370px;
+        left: 500px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_5 a { display: none; }
+    
+    #wrapper_5:hover #leka {display: none;} 
+    #wrapper_5:hover #leka_2 { display: block; }
+    #wrapper_5:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 500px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+
+/* moscow */
+
+#moscow { display: block; }
+    #moscow_first { 
+        background-image: url(../pictures/2021_moscow.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 560px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #moscow_first_2{
+        background-color: #18f60d;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 600px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #moscow_2 { display: none; }
+    #moscow_second { 
+        background-image: url(../pictures/2021_moscow.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 550px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #moscow_second_2 {
+        background-color: #18f60d;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 600px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_6 a { display: none; }
+    
+    #wrapper_6:hover #moscow {display: none;} 
+    #wrapper_6:hover #moscow_2 { display: block; }
+    #wrapper_6:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 550px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+
+/* new year */
+
+#nn { display: block; }
+#nn_first { 
+    background-image: url(../pictures/2021_nn.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#nn_first_2{
+    background-color: #5cfffe;
+    opacity: 0.4;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    left: 1200px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#nn_2 { display: none; }
+#nn_second { 
+    background-image: url(../pictures/2021_nn.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 1200px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#nn_second_2 {
+    background-color: #5cfffe;
+    opacity: 0.2;
+    height: 165px;
+    width: 220px;
+    position: absolute;
+    top: 140px;
+    left: 1200px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#wrapper_7 a { display: none; }
+
+#wrapper_7:hover #nn {display: none;} 
+#wrapper_7:hover #nn_2 { display: block; }
+#wrapper_7:hover a { 
+    display: block; height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 1200px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+
+/* suzdal */
+
+#suzdal { display: block; }
+    #suzdal_first { 
+        background-image: url(../pictures/2021_suzdal.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 330px;
+        left: 850px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #suzdal_first_2{
+        background-color: gray;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 370px;
+        left: 850px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #suzdal_2 { display: none; }
+    #suzdal_second { 
+        background-image: url(../pictures/2021_suzdal.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 850px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #suzdal_second_2 {
+        background-color: gray;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 370px;
+        left: 850px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_8 a { display: none; }
+    
+    #wrapper_8:hover #suzdal {display: none;} 
+    #wrapper_8:hover #suzdal_2 { display: block; }
+    #wrapper_8:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 320px;
+        left: 850px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+
+/* hockey */
+
+#hockey { display: block; }
+#hockey_first { 
+    background-image: url(../pictures/2021_hockey.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 560px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#hockey_first_2{
+    background-color: #101cff;
+    opacity: 0.4;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#hockey_2 { display: none; }
+#hockey_second { 
+    background-image: url(../pictures/2021_hockey.jpg); 
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 550px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+#hockey_second_2 {
+    background-color: #101cff;
+    opacity: 0.2;
+    height: 165px;
+    width: 220px;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    z-index: 5;
+}
+
+#wrapper_9 a { display: none; }
+
+#wrapper_9:hover #hockey {display: none;} 
+#wrapper_9:hover #hockey_2 { display: block; }
+#wrapper_9:hover a { 
+    display: block; height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 550px;
+    left: 500px;
+    transform: rotate(-35deg) skew(20deg,10deg);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 10;
+}
+
+/* elektrostal */
+
+#elektrostal { display: block; }
+    #elektrostal_first { 
+        background-image: url(../pictures/2021_elektrostal.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 790px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #elektrostal_first_2{
+        background-color: #fff123;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 830px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #elektrostal_2 { display: none; }
+    #elektrostal_second { 
+        background-image: url(../pictures/2021_elektrostal.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 780px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #elektrostal_second_2 {
+        background-color: #fff123;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 830px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_10 a { display: none; }
+    
+    #wrapper_10:hover #elektrostal {display: none;} 
+    #wrapper_10:hover #elektrostal_2 { display: block; }
+    #wrapper_10:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 780px;
         left: 150px;
         transform: rotate(-35deg) skew(20deg,10deg);
         font-size: 1.5em;
