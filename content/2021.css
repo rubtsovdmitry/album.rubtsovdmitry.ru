@@ -1,0 +1,72 @@
+* { margin: 0px; }
+* { padding: 0px; }
+
+.height100 { height: 100%; }
+
+/* verbilki */
+
+    #verbilki { display: block; }
+    #verbilki_first { 
+        background-image: url(../pictures/2021_verbilki.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #verbilki_first_2{
+        background-color: red;
+        opacity: 0.4;
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #verbilki_2 { display: none; }
+    #verbilki_second { 
+        background-image: url(../pictures/2021_verbilki.jpg); 
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 90px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
+    #verbilki_second_2 {
+        background-color: red;
+        opacity: 0.2;
+        height: 165px;
+        width: 220px;
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        z-index: 5;
+    }
+    
+    #wrapper_1 a { display: none; }
+    
+    #wrapper_1:hover #verbilki {display: none;} 
+    #wrapper_1:hover #verbilki_2 { display: block; }
+    #wrapper_1:hover a { 
+        display: block; height: 150px;
+        width: 200px;
+        position: absolute;
+        top: 90px;
+        left: 150px;
+        transform: rotate(-35deg) skew(20deg,10deg);
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 10;
+    }
