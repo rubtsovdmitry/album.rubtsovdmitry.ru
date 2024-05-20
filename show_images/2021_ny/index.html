@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/001.jpg" title="Новый год №1"> Новый год №1 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/002.jpg" title="Новый год №2"> Новый год №2 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/003.jpg" title="Новый год №3"> Новый год №3 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/004.jpg" title="Новый год №4"> Новый год №4 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/005.jpg" title="Новый год №5"> Новый год №5 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/006.jpg" title="Новый год №6"> Новый год №6 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/007.jpg" title="Новый год №7"> Новый год №7 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/008.jpg" title="Новый год №8"> Новый год №8 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/009.jpg" title="Новый год №9"> Новый год №9 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/010.jpg" title="Новый год №10"> Новый год №10 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/011.jpg" title="Новый год №11"> Новый год №11 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/012.jpg" title="Новый год №12"> Новый год №12 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/013.jpg" title="Новый год №13"> Новый год №13 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/014.jpg" title="Новый год №14"> Новый год №14 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/015.jpg" title="Новый год №15"> Новый год №15 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/016.jpg" title="Новый год №16"> Новый год №16 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/017.jpg" title="Новый год №17"> Новый год №17 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/018.jpg" title="Новый год №18"> Новый год №18 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/019.jpg" title="Новый год №19"> Новый год №19 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/020.jpg" title="Новый год №20"> Новый год №20 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/021.jpg" title="Новый год №21"> Новый год №21 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/022.jpg" title="Новый год №22"> Новый год №22 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/023.jpg" title="Новый год №23"> Новый год №23 </a></p>
+		<p><a class="group3" href="../../pictures/2021_Новый_год/024.jpg" title="Новый год №24"> Новый год №24 </a></p>
+	</body>
+</html>
