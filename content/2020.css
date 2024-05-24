@@ -1,0 +1,1234 @@
+* { margin: 0px; }
+* { padding: 0px; }
+* { font-weight: 600; color: darkblue; font-size: 1.1em; }
+
+
+.height100 { height: 100%; }
+
+
+/* wrapper */
+    .size_of_page {    
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* wave_1*/
+    .photowave {
+        --index: calc(1vw + 1vh);
+        --transition: cubic-bezier(.1, .7, 0, 1);
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;    
+        gap: 0.4%;
+        perspective: calc(var(--index) * 50);
+        width: 25%;
+        position: relative;
+        z-index: 10;
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+        float: right;
+        /* border: 1px solid red; */     
+    }
+    .photowave div:nth-child(1) {
+        background-position: 0 center;
+    }
+    .photowave div:nth-child(2) {
+        background-position: 8.33333% center;
+    }
+    .photowave div:nth-child(3) {
+        background-position: 16.66666% center;
+    }
+    .photowave div:nth-child(4) {
+        background-position: 24.99999% center;
+    }
+    .photowave div:nth-child(5) {
+        background-position: 33.33332% center;
+    }
+    .photowave div:nth-child(6) {
+        background-position: 41.66665% center;
+    }
+    .photowave div:nth-child(7) {
+        background-position: 49.99998% center;
+    }
+    .photowave div:nth-child(8) {
+        background-position: 58.33331% center;
+    }
+    .photowave div:nth-child(9) {
+        background-position: 66.66664% center;
+    }
+    .photowave div:nth-child(10) {
+        background-position: 74.99997% center;
+    }
+    .photowave div:nth-child(11) {
+        background-position: 83.3333% center;
+    }
+    .photowave div:nth-child(12) {
+        background-position: 91.6666% center;
+    }
+    .photowave div:nth-child(13) {
+        background-position: 100% center;
+    }
+    .photowave div:before, 
+    .photowave div:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 30px;
+        right: calc(var(--index) * -1);
+    }
+    .photowave div:after {
+        left: calc(var(--index) * -1);
+    }
+    .photowave div:hover {
+        filter: contrast(1.3) brightness(1.3) saturate(1.3);
+        transform: translateZ(calc(var(--index) * 10));
+    }
+    .photowave div:hover + * {
+        filter: contrast(1.25) brightness(1.25) saturate(1.25);
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+        z-index: -1;
+    }
+    .photowave div:hover + * + * {
+        filter: contrast(1.2) brightness(1.2) saturate(1.2);
+        transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+        z-index: -2;
+    }
+    .photowave div:hover + * + * + * {
+        filter: contrast(1.15) brightness(1.1) saturate(1.1);
+        transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+        z-index: -3;
+    }
+    .photowave div:hover + * + * + * + * {
+        filter: contrast(1.1) brightness(1.05) saturate(1.05);
+        transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+        z-index: -4;
+    }
+    .photowave div:has( + :hover) {
+        filter: contrast(1.25) brightness(1.25) saturate(1.25);
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+    }
+    .photowave div:has( + * + :hover) {
+        filter: contrast(1.2) brightness(1.2) saturate(1.2);
+        transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+    }
+    .photowave div:has( + * + * + :hover) {
+        filter: contrast(1.15) brightness(1.1) saturate(1.1);
+        transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+    }
+    .photowave div:has( + * + * + * + :hover) {
+        filter: contrast(1.1) brightness(1.05) saturate(1.05);
+        transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+    }  
+    .photowave div {
+        width: 7.5%;
+        height: 250px;
+        background-image: url(../pictures/2020_verbilki.jpg);
+        background-repeat: no-repeat;
+        background-size: 1300% auto;
+        filter: contrast(1) brightness(1) saturate(1);
+        transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+        will-change: transform, filter, rotateY, width;
+    }
+
+
+/* wave_2*/
+.photowave_2 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_2 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_2 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_2 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_2 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_2 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_2 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_2 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_2 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_2 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_2 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_2 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_2 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_2 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_2 div:before, 
+.photowave_2 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_2 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_2 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_2 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_2 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_2 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_2 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_2 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_2 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_2 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_2 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_2 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_deti.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+   
+
+/* wave_3*/
+.photowave_3 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_3 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_3 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_3 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_3 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_3 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_3 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_3 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_3 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_3 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_3 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_3 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_3 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_3 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_3 div:before, 
+.photowave_3 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_3 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_3 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_3 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_3 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_3 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_3 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_3 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_3 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_3 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_3 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_3 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_judo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_4*/
+.photowave_4 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_4 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_4 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_4 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_4 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_4 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_4 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_4 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_4 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_4 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_4 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_4 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_4 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_4 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_4 div:before, 
+.photowave_4 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_4 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_4 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_4 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_4 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_4 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_4 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_4 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_4 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_4 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_4 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_4 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_kazan.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_5*/
+.photowave_5 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    clear: both;
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_5 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_5 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_5 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_5 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_5 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_5 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_5 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_5 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_5 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_5 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_5 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_5 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_5 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_5 div:before, 
+.photowave_5 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_5 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_5 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_5 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_5 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_5 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_5 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_5 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_5 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_5 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_5 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_5 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_kuligi.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_6*/
+.photowave_6 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_6 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_6 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_6 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_6 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_6 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_6 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_6 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_6 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_6 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_6 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_6 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_6 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_6 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_6 div:before, 
+.photowave_6 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_6 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_6 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_6 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_6 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_6 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_6 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_6 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_6 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_6 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_6 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_6 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_leka.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_7*/
+.photowave_7 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_7 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_7 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_7 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_7 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_7 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_7 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_7 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_7 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_7 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_7 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_7 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_7 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_7 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_7 div:before, 
+.photowave_7 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_7 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_7 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_7 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_7 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_7 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_7 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_7 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_7 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_7 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_7 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_7 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_ny.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_8*/
+.photowave_8 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_8 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_8 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_8 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_8 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_8 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_8 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_8 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_8 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_8 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_8 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_8 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_8 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_8 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_8 div:before, 
+.photowave_8 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_8 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_8 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_8 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_8 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_8 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_8 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_8 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_8 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_8 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_8 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_8 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_noginsk.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_9*/
+.photowave_9 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    clear: both;
+    float: right;
+    /* border: 1px solid red; */     
+}
+.photowave_9 div:nth-child(1) {
+    background-position: 0 center;
+}
+.photowave_9 div:nth-child(2) {
+    background-position: 8.33333% center;
+}
+.photowave_9 div:nth-child(3) {
+    background-position: 16.66666% center;
+}
+.photowave_9 div:nth-child(4) {
+    background-position: 24.99999% center;
+}
+.photowave_9 div:nth-child(5) {
+    background-position: 33.33332% center;
+}
+.photowave_9 div:nth-child(6) {
+    background-position: 41.66665% center;
+}
+.photowave_9 div:nth-child(7) {
+    background-position: 49.99998% center;
+}
+.photowave_9 div:nth-child(8) {
+    background-position: 58.33331% center;
+}
+.photowave_9 div:nth-child(9) {
+    background-position: 66.66664% center;
+}
+.photowave_9 div:nth-child(10) {
+    background-position: 74.99997% center;
+}
+.photowave_9 div:nth-child(11) {
+    background-position: 83.3333% center;
+}
+.photowave_9 div:nth-child(12) {
+    background-position: 91.6666% center;
+}
+.photowave_9 div:nth-child(13) {
+    background-position: 100% center;
+}
+.photowave_9 div:before, 
+.photowave_9 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+}
+.photowave_9 div:after {
+    left: calc(var(--index) * -1);
+}
+.photowave_9 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+}
+.photowave_9 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+.photowave_9 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+.photowave_9 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+.photowave_9 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+.photowave_9 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+.photowave_9 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+.photowave_9 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+.photowave_9 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}  
+.photowave_9 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_suzdal.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+
+/* wave_10*/
+.photowave_10 {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 0.4%;
+    perspective: calc(var(--index) * 50);
+    width: 25%;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)) drop-shadow(0 12px 16px rgba(0,0,0,0.05));    
+    float: right;
+    /* border: 1px solid red; */     
+    }
+    .photowave_10 div:nth-child(1) {
+    background-position: 0 center;
+    }
+    .photowave_10 div:nth-child(2) {
+    background-position: 8.33333% center;
+    }
+    .photowave_10 div:nth-child(3) {
+    background-position: 16.66666% center;
+    }
+    .photowave_10 div:nth-child(4) {
+    background-position: 24.99999% center;
+    }
+    .photowave_10 div:nth-child(5) {
+    background-position: 33.33332% center;
+    }
+    .photowave_10 div:nth-child(6) {
+    background-position: 41.66665% center;
+    }
+    .photowave_10 div:nth-child(7) {
+    background-position: 49.99998% center;
+    }
+    .photowave_10 div:nth-child(8) {
+    background-position: 58.33331% center;
+    }
+    .photowave_10 div:nth-child(9) {
+    background-position: 66.66664% center;
+    }
+    .photowave_10 div:nth-child(10) {
+    background-position: 74.99997% center;
+    }
+    .photowave_10 div:nth-child(11) {
+    background-position: 83.3333% center;
+    }
+    .photowave_10 div:nth-child(12) {
+    background-position: 91.6666% center;
+    }
+    .photowave_10 div:nth-child(13) {
+    background-position: 100% center;
+    }
+    .photowave_10 div:before, 
+    .photowave_10 div:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: calc(var(--index) * -1);
+    }
+    .photowave_10 div:after {
+    left: calc(var(--index) * -1);
+    }
+    .photowave_10 div:hover {
+    filter: contrast(1.3) brightness(1.3) saturate(1.3);
+    transform: translateZ(calc(var(--index) * 10));
+    }
+    .photowave_10 div:hover + * {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+    }
+    .photowave_10 div:hover + * + * {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+    }
+    .photowave_10 div:hover + * + * + * {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+    }
+    .photowave_10 div:hover + * + * + * + * {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+    }
+    .photowave_10 div:has( + :hover) {
+    filter: contrast(1.25) brightness(1.25) saturate(1.25);
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+    }
+    .photowave_10 div:has( + * + :hover) {
+    filter: contrast(1.2) brightness(1.2) saturate(1.2);
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+    }
+    .photowave_10 div:has( + * + * + :hover) {
+    filter: contrast(1.15) brightness(1.1) saturate(1.1);
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+    }
+    .photowave_10 div:has( + * + * + * + :hover) {
+    filter: contrast(1.1) brightness(1.05) saturate(1.05);
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+    }  
+    .photowave_10 div {
+    width: 7.5%;
+    height: 250px;
+    background-image: url(../pictures/2020_elektrostal.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300% auto;
+    filter: contrast(1) brightness(1) saturate(1);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+    }
+
+
+/* for all names from left*/
+.height250px_left { height: 175px; width: 22.5%; float: right; margin: 20px; padding-top: 80px; /* border: 1px solid red; */ }
+.typing-demo { 
+    width: 45%;
+    animation: typing 2s steps(70);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    float: right;
+  }
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }     
+
+
+/* for all names from right*/
+.height250px_right { height: 175px; width: 22.5%; float: right; margin: 20px; padding-top: 80px; /* border: 1px solid red; */ }
+.typing-demo_2 { 
+    width: 100%;
+    animation: typing 2s steps(70);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    float: right;
+  }
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }    
+
+
+/* empty div */
+#empty { height: 150px; }
