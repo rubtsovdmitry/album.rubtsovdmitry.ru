@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		<style>
+			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
+			h2{font-size:13px; margin:15px 0 0 0;}
+		</style>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/001.jpg" title="Вербилки №1"> Вербилки №1 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/002.jpg" title="Вербилки №2"> Вербилки №2 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/003.jpg" title="Вербилки №3"> Вербилки №3 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/004.jpg" title="Вербилки №4"> Вербилки №4 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/005.jpg" title="Вербилки №5"> Вербилки №5 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/006.jpg" title="Вербилки №6"> Вербилки №6 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/007.jpg" title="Вербилки №7"> Вербилки №7 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/008.jpg" title="Вербилки №8"> Вербилки №8 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/009.jpg" title="Вербилки №9"> Вербилки №9 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/010.jpg" title="Вербилки №10"> Вербилки №10 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/011.jpg" title="Вербилки №11"> Вербилки №11 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/012.jpg" title="Вербилки №12"> Вербилки №12 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/013.jpg" title="Вербилки №13"> Вербилки №13 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/014.jpg" title="Вербилки №14"> Вербилки №14 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/015.jpg" title="Вербилки №15"> Вербилки №15 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/016.jpg" title="Вербилки №16"> Вербилки №16 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/017.jpg" title="Вербилки №17"> Вербилки №17 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/018.jpg" title="Вербилки №18"> Вербилки №18 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/019.jpg" title="Вербилки №19"> Вербилки №19 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/020.jpg" title="Вербилки №20"> Вербилки №20 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/021.jpg" title="Вербилки №21"> Вербилки №21 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/022.jpg" title="Вербилки №22"> Вербилки №22 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/023.jpg" title="Вербилки №23"> Вербилки №23 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/024.jpg" title="Вербилки №24"> Вербилки №24 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/025.jpg" title="Вербилки №25"> Вербилки №25 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/026.jpg" title="Вербилки №26"> Вербилки №26 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/027.jpg" title="Вербилки №27"> Вербилки №27 </a></p>
+		<p><a class="group3" href="../../pictures/2020_Вербилки/028.jpg" title="Вербилки №28"> Вербилки №28 </a></p>
+	</body>
+</html>
